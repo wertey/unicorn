@@ -1,0 +1,28 @@
+.lp-advantages {
+  background: $advantage-bg;
+  min-height: 375px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &-row {
+    display: flex;
+    justify-content: space-around;
+    &-item {
+      width: 300px;
+      padding: 10px;
+      &__title {
+        font-family: 'Source Sans SemiBold', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 33px;
+        margin-top: 24px;
+      }
+      &__text {
+        font-family: 'Source Sans Regular', sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 24px;
+      }
+    }
+  }
+}
