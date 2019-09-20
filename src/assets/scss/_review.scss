@@ -1,0 +1,32 @@
+.lp-review {
+  text-align: center;
+  background: #212121;
+  padding-top: 115px;
+  min-height: 315px;
+  padding-bottom: 60px;
+  color: white;
+  width: 100%;
+  font-family: 'Source Sans Regular', sans-serif;
+  &__info {
+    font-size: 20px;
+    line-height: 36px;
+    width: 870px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+    &:after {
+      position: absolute;
+      content: '';
+      background: url(../../assets/img/1.png)no-repeat;
+      width: 20px;
+      height: 20px;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      top: -30px;
+    }
+  }
+  &__name {
+    font-size: 20px;
+    line-height: 38px;
+  }
+}

@@ -1,0 +1,69 @@
+.lp-facts {
+  width: 100%;
+  padding-top: 115px;
+  background: url(../../assets/img/Layer-13.png)no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 140px;
+  &:after {
+    background: rgba(#575757,.7);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  &__title {
+    text-align: center;
+    z-index: 3;
+    position: relative;
+    color: white;
+  }
+  &-block {
+    background: rgba(#888888,.3);
+    width: 830px;
+    margin: 60px auto 0;
+    padding: 50px 20px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 4;
+    &-row {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 9px 5px;
+      &-item {
+        color: #eeeeee;
+        width: 50%;
+        &__nums {
+          font-family: 'Source Sans Bold', sans-serif;
+          font-size: 27px;
+          line-height: 34px;
+          font-weight: bold;
+          margin-bottom: 40px;
+          position: relative;
+          &:after {
+            position: absolute;
+            content: '';
+            height: 7px;
+            width: 80px;
+            left: 50%;
+            top: 50px;
+            transform: translate(-50%,-50%);
+            background: #4d4c4b;
+          }
+        }
+        &__text {
+          font-family: 'Source Sans Regular', sans-serif;
+          font-size: 24px;
+          line-height: 34px;
+        }
+      }
+    }
+  }
+}
