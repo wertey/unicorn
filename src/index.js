@@ -8,6 +8,8 @@ import './assets/scss/core.scss'
 import $ from "jquery";
 require('slick-carousel/slick/slick.scss');
 require('slick-carousel/slick/slick-theme.scss');
+require('slick-carousel/slick/slick-theme.scss');
+require('jquery-quicksand/jquery.quicksand');
 
 
 $('.lp-feature-slider').slick({
@@ -21,11 +23,19 @@ $('.lp-feature-slider').slick({
 });
 
 $('.lp-clients-slider').slick({
-    dots: true,
+    dots: false,
     arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 6,
     centerMode: true,
-    centerPadding: '40px'
+    centerPadding: '40px',
 });
+
+$("#content").quicksand($("#data > li"),
+    {
+        duration: 1000,
+        easing: "swing",
+        attribute: "data-id",
+    }
+);
