@@ -15,8 +15,17 @@ $('.lp-feature-slider').slick({
     arrows: true,
     infinite: true,
     speed: 500,
-    fade: true,
-    cssEase: 'linear',
     slidesToShow: 3,
-    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '20px'
+});
+
+$('.lp-clients-slider').slick({
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    centerMode: true,
+    centerPadding: '40px'
 });

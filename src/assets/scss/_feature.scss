@@ -2,12 +2,6 @@
   text-align: center;
   padding-top: 100px;
   padding-bottom: 140px;
-  &__title {
-    font-family: 'Source Sans Bold', sans-serif;
-    font-size: 27px;
-    line-height: 33px;
-    font-weight: bold;
-  }
   &__text {
     font-family: 'Source Sans Regular', sans-serif;
     line-height: 33px;
@@ -22,6 +16,7 @@
     &-item {
       background: #222222;
       width: 370px;
+      max-width: 370px;
       min-height: 375px;
       padding: 70px 42px 30px;
       color: #eee;

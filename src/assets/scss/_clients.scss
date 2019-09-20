@@ -1,0 +1,20 @@
+.lp-clients {
+  background: $advantage-bg;
+  padding-top: 65px;
+  padding-bottom: 55px;
+  width: 100%;
+  min-height: 365px;
+  &__title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    &-item {
+
+    }
+  }
+}
