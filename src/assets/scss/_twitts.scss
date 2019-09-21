@@ -5,6 +5,16 @@
     text-align: center;
     &__img {
       margin-bottom: 40px;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "\f099";
+        font-family: 'FontAwesome',sans-serif;
+        top: -49px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 34px;
+      }
     }
     &__text {
       font-family: 'Source Sans Regular', sans-serif;
