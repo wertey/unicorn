@@ -1,0 +1,23 @@
+.lp-twitts {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  &-row {
+    text-align: center;
+    &__img {
+      margin-bottom: 40px;
+    }
+    &__text {
+      font-family: 'Source Sans Regular', sans-serif;
+      width: 870px;
+      margin: 0 auto 40px;
+      font-size: 20px;
+      line-height: 38px;
+    }
+    &__id {
+      font-size: 16px;
+      line-height: 38px;
+      font-weight: bold;
+      font-family: 'Source Sans Bold', sans-serif;
+    }
+  }
+}

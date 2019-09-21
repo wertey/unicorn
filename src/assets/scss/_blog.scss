@@ -1,0 +1,43 @@
+.lp-blog {
+  padding-top: 65px;
+  padding-bottom: 80px;
+  width: 100%;
+  &-row {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-item {
+      width: 50%;
+      text-align: center;
+      &__date {
+        line-height: 33px;
+        font-size: 14px;
+        font-family: 'Source Sans Regular', sans-serif;
+        margin-bottom: 15px;
+      }
+      &__title {
+        font-size: 24px;
+        line-height: 33px;
+        font-family: 'Source Sans SemiBold', sans-serif;
+        font-weight: 400;
+        margin-bottom: 44px;
+      }
+      &__text {
+        font-family: 'Source Sans Regular', sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+      }
+      &__img {
+        max-width: 570px;
+        height: auto;
+      }
+      &-info {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.lp-slider {
+  width: 100%;
+  background: #efefef;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    &__item {
+      width: 33%;
+      text-align: center;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 70px;
+        transform: translate(-50%,-50%);
+        height: 76px;
+        width: 5px;
+        background: #212121;
+      }
+      &-title{
+        font-family: 'Source Sans SemiBold', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 33px;
+      }
+      &-date {
+        font-size: 14px;
+        line-height: 33px;
+        font-family: 'Source Sans Regular', sans-serif;
+      }
+    }
+  }
+}
