@@ -43,6 +43,12 @@
     padding-top: 400px;
     &__title {
       position: relative;
+      font-size: 72px;
+      line-height: 32px;
+      font-weight: bold;
+      font-family: "Source Sans Bold",sans-serif;
+
+      text-transform: uppercase;
       &:after {
         position: absolute;
         content: '';
@@ -68,6 +74,11 @@
       font-family: 'Source Sans SemiBold', sans-serif;
       font-size: 18px;
       line-height: 34px;
+      transition: all .3s ease-in;
+      &:hover {
+        background: #000;
+        color: white;
+      }
     }
   }
 }

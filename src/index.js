@@ -10,7 +10,6 @@ require('slick-carousel/slick/slick.scss');
 require('font-awesome/css/font-awesome.css');
 require('slick-carousel/slick/slick-theme.scss');
 require('slick-carousel/slick/slick-theme.scss');
-require('jquery-quicksand/jquery.quicksand');
 
 
 $('.lp-feature-slider').slick({
@@ -21,6 +20,7 @@ $('.lp-feature-slider').slick({
     slidesToShow: 3,
     centerMode: true,
     centerPadding: '20px',
+    dotsClass: 'slick-dots lp-feature-slider__dots',
     responsive: [
         {
             breakpoint: 1025,
@@ -63,10 +63,12 @@ $('.lp-slider-row').slick({
     slidesToShow: 3,
 });
 
-$("#content").quicksand($("#data > li"),
-    {
-        duration: 1000,
-        easing: "swing",
-        attribute: "data-id",
-    }
-);
+$('.lp-portfolio__slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    dotsClass: 'slick-dots lp-portfolio__slider-dots'
+});
+

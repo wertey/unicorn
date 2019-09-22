@@ -57,3 +57,11 @@ button {
   border: none;
   background: none;
 }
+
+a {
+  transition: all .3s ease-in;
+  &:hover {
+    color: gray;
+  }
+}
+
