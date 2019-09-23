@@ -23,5 +23,11 @@
     font-size: 16px;
     line-height: 33px;
     margin: 75px auto 30px;
+    @media screen and (max-width: 374px) {
+      & {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
   }
 }

@@ -4,6 +4,12 @@
   background: url(../../assets/img/temp.png)no-repeat;
   background-size: 100% 100%;
   padding-top: 55px;
+  @media screen and (max-width: 1023px) {
+    & {
+      background-size: cover;
+      background-position: top right;
+    }
+  }
   &-row {
     display: flex;
     justify-content: space-between;
@@ -13,6 +19,11 @@
     font-family: 'Source Sans Pro Bold', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+      & {
+        flex-direction: column;
+      }
+    }
     &-logo {
       font-size: 18px;
       line-height: 32px;
@@ -41,14 +52,29 @@
     margin-left: auto;
     text-align: right;
     padding-top: 400px;
+    @media screen and (max-width: 767px) {
+      & {
+        max-width: 300px;
+        padding-top: 270px;
+      }
+    }
+    @media screen and (max-width: 374px) {
+      & {
+        padding-top: 50px;
+      }
+    }
     &__title {
       position: relative;
       font-size: 72px;
       line-height: 32px;
       font-weight: bold;
       font-family: "Source Sans Bold",sans-serif;
-
       text-transform: uppercase;
+      @media screen and (max-width: 767px) {
+        & {
+          font-size: 35px;
+        }
+      }
       &:after {
         position: absolute;
         content: '';
@@ -64,6 +90,20 @@
       line-height: 34px;
       font-family: 'Source Sans Regular', sans-serif;
       margin-top: 71px;
+      @media screen and (max-width: 767px) {
+        & {
+          font-size: 15px;
+          line-height: 25px;
+          background-size: cover;
+          background-position: top right;
+        }
+      }
+      @media screen and (max-width: 374px) {
+        & {
+          margin-top: 80px;
+          line-height: 20px;
+        }
+      }
     }
     &__btn {
       min-width: 270px;

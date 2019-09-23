@@ -33,11 +33,17 @@ $('.lp-feature-slider').slick({
             }
         },
         {
-            breakpoint: 769,
+            breakpoint: 1023,
             settings: {
                 slidesToShow: 2,
-                centerMode: true,
-                centerPadding: '20px',
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
                 infinite: true,
                 dots: true
             }

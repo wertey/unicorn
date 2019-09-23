@@ -26,5 +26,9 @@
     &-dots {
       bottom: 90px;
     }
+    &-item img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
