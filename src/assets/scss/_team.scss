@@ -10,6 +10,11 @@
     text-align: center;
     width: 770px;
     margin: 0 auto;
+    @media screen and (max-width: 1023px) {
+      & {
+        width: 100%;
+      }
+    }
   }
   &-row {
     margin-top: 90px;
@@ -17,12 +22,24 @@
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    @media screen and (max-width: 1023px) {
+      & {
+        flex-wrap: wrap;
+      }
+    }
     &-item {
       text-align: center;
       width: 20%;
       padding: 10px;
-      &__img {
-
+      @media screen and (max-width: 1023px) {
+         &{
+           width: 50%;
+         }
+      }
+      @media screen and (max-width: 639px) {
+        & {
+          width: 100%;
+        }
       }
       &__name {
         margin-top: 53px;

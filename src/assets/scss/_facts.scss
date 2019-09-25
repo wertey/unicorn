@@ -29,6 +29,11 @@
     position: relative;
     box-sizing: border-box;
     z-index: 4;
+    @media screen and (max-width: 1023px) {
+      & {
+        max-width: 100%;
+      }
+    }
     &-row {
       display: flex;
       justify-content: space-around;
@@ -37,9 +42,20 @@
       box-sizing: border-box;
       text-align: center;
       padding: 9px 5px;
+      @media screen and (max-width: 767px) {
+        & {
+          flex-direction: column;
+        }
+      }
       &-item {
         color: #eeeeee;
         width: 50%;
+        @media screen and (max-width: 767px) {
+           & {
+             margin-bottom: 40px;
+             width: 100%;
+           }
+        }
         &__nums {
           font-family: 'Source Sans Bold', sans-serif;
           font-size: 27px;

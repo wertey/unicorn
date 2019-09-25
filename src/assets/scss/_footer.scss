@@ -129,6 +129,11 @@
       display: flex;
       justify-content: space-between;
       flex-direction: row;
+      @media screen and (max-width: 1023px) {
+         & {
+           flex-direction: column;
+         }
+      }
 
       &-item {
         &__text {
@@ -145,6 +150,9 @@
           & li {
             padding: 0 10px;
           }
+        }
+        &-first {
+            order: -1;
         }
       }
     }

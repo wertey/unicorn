@@ -7,9 +7,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 1023px) {
+      & {
+        padding-top: 10px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+       & {
+         flex-direction: column;
+       }
+    }
     &-item {
       width: 50%;
       text-align: center;
+      @media screen and (max-width: 767px) {
+        & {
+          width: 100%;
+        }
+      }
       &__date {
         line-height: 33px;
         font-size: 14px;
@@ -31,12 +46,34 @@
       &__img {
         max-width: 570px;
         height: auto;
+        @media screen and (max-width: 1199px) {
+           & {
+             max-width: 100%;
+           }
+        }
       }
       &-info {
         padding-top: 80px;
         padding-bottom: 80px;
         padding-left: 50px;
         padding-right: 50px;
+        @media screen and (max-width: 1023px) {
+           & {
+             padding: 20px;
+           }
+        }
+        @media screen and (max-width: 767px) {
+           & {
+             padding: 0 0 30px 0 !important;
+           }
+        }
+        &-second {
+          @media screen and (max-width: 767px) {
+             & {
+               order: -1;
+             }
+          }
+        }
       }
     }
   }

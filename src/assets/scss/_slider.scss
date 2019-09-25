@@ -21,6 +21,11 @@
         height: 76px;
         width: 5px;
         background: #212121;
+        @media screen and (max-width: 1023px) {
+           & {
+             left: 35px;
+           }
+        }
       }
       &-title{
         font-family: 'Source Sans SemiBold', sans-serif;

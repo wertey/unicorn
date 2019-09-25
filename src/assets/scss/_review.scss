@@ -14,6 +14,17 @@
     margin: 0 auto;
     position: relative;
     margin-bottom: 30px;
+    @media screen and (max-width: 1023px) {
+      & {
+        max-width: 100%;
+      }
+    }
+    @media screen and (max-width: 767px) {
+       &{
+         font-size: 16px;
+         line-height: 29px;
+       }
+    }
     &:after {
       position: absolute;
       content: '';
