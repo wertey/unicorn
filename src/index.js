@@ -45,7 +45,8 @@ $('.lp-feature-slider').slick({
             settings: {
                 slidesToShow: 1,
                 infinite: true,
-                dots: true
+                dots: true,
+                arrows: false,
             }
         },
         ]
