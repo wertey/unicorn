@@ -74,7 +74,8 @@ $('.lp-clients-slider').slick({
             settings: {
                 slidesToShow: 2,
                 infinite: true,
-                dots: false
+                dots: false,
+                arrows: false,
             }
         },
         {
